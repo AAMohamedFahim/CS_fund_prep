@@ -1,0 +1,95 @@
+# ER Model (Entity-Relationship Model) Short Technical Notes
+
+---
+
+## Concept: ER Model
+**Definition:** A conceptual database design model representing entities, their attributes, and relationships.  
+**Key Points:**  
+- Graphically shown by Entity-Relationship Diagrams (ERD).  
+- Facilitates logical structure design before physical database creation.  
+- Makes complex data systems easier to understand visually without technical DBMS knowledge.  
+**Example:** Models entities like Student, Course, and their enrollment relationship.
+
+---
+
+## Concept: Entity
+**Definition:** A real-world object or concept stored as data in a database.  
+**Key Points:**  
+- Represents persons, things, or concepts (e.g., Student, Car, Product).  
+- Structure defined by entity type; individual occurrences are entities.  
+- Represented by rectangles in ER diagrams.  
+**Example:** A Student entity might have instances like individual students.
+
+---
+
+## Concept: Entity Set
+**Definition:** A collection of entities of the same entity type.  
+**Key Points:**  
+- Groups all entities of a type together (e.g., all students).  
+- ER diagrams show entity types, not specific individual entities.  
+- Entities in sets correspond to table rows in relational databases.  
+**Example:** The entity set "Students" contains all student entities.
+
+---
+
+## Concept: Types of Entities
+**Definition:** Classification into strong and weak entities based on identification.  
+**Key Points:**  
+- **Strong Entity:** Has a key attribute uniquely identifying each instance; independent.  
+- **Weak Entity:** Depends on a strong entity for identification; no unique key of its own.  
+- Weak entities represented by double rectangles; identifying relationships by double diamonds.  
+**Example:** Employee is a strong entity; Dependents of employees are weak entities.
+
+---
+
+## Concept: Attributes
+**Definition:** Properties describing an entity type.  
+**Key Points:**  
+- Types include key, composite, multivalued, and derived attributes.  
+- Key attribute uniquely identifies entities (underlined in diagrams).  
+- Composite attributes consist of smaller attributes; multivalued can hold multiple values.  
+- Derived attributes are computed from other attributes.  
+**Example:** Student’s Roll_No (key), Address (composite), Phone_No (multivalued), Age (derived).
+
+---
+
+## Concept: Relationship Type and Relationship Set
+**Definition:** Associations between entity types.  
+**Key Points:**  
+- Relationship types are represented by diamonds connecting entities.  
+- Relationship sets are collections of such associations in the database.  
+- Degrees indicate how many entity sets participate (unary, binary, ternary, n-ary).  
+**Example:** 'Enrolled in' between Student and Course is a binary relationship.
+
+---
+
+## Concept: Cardinality
+**Definition:** Maximum number of times an entity can participate in a relationship.  
+**Key Points:**  
+- Types include one-to-one, one-to-many, many-to-one, many-to-many.  
+- Defines the mapping between entities in relationships.  
+- Important for database normalization and integrity.  
+**Example:** A student can enroll in many courses (many-to-many).
+
+---
+
+## Concept: Participation Constraint
+**Definition:** Extent to which entities participate in relationships.  
+**Key Points:**  
+- Total Participation: Every entity must participate (double line).  
+- Partial Participation: Entities may or may not participate (single line).  
+- Indicates mandatory vs optional relationships.  
+**Example:** Every student must enroll in at least one course (total participation).
+
+---
+
+## Concept: How to Draw an ER Diagram
+**Definition:** Stepwise approach to designing ER diagrams.  
+**Key Points:**  
+- Identify entities and represent with rectangles.  
+- Identify relationships using diamonds, connecting entities.  
+- Add attributes with ovals connected to entities/relationships.  
+- Define primary keys by underlining key attributes.  
+- Remove redundancies and review for clarity and correctness.  
+**Example:** Building ERD for a university database with students, courses, and enrollments.
+
