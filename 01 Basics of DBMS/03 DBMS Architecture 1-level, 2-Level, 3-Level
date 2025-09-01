@@ -1,0 +1,102 @@
+# DBMS Architecture (1-Tier, 2-Tier, 3-Tier) Short Technical Notes
+
+---
+
+## Concept: DBMS Architecture
+**Definition:** Defines how users interact with the database to read, write, or update data.  
+**Key Points:**  
+- Ensures data consistency, performance, and security through architectural design.  
+- Different architectures suit various usage and scalability requirements.  
+- Common architectures include 1-Tier, 2-Tier, and 3-Tier models.  
+**Example:** Using different architectural models in small to large-scale database applications.
+
+---
+
+## Concept: 1-Tier Architecture
+**Definition:** Architecture where client, server, and database all reside on the same system.  
+**Key Points:**  
+- Simple setup for standalone or personal applications without network needs.  
+- Low cost and easy to implement, but limited to single user access.  
+- Poor security and no centralized control, making data sharing difficult.  
+**Example:** Microsoft Excel, where data and application are on the same machine.
+
+---
+
+## Concept: 2-Tier Architecture
+**Definition:** Client-server model with direct communication between client application and database server.  
+**Key Points:**  
+- Client handles UI and application logic; server manages database storage and query processing.  
+- Easy access to database and scalable by adding clients or improving hardware.  
+- Security issues and tight coupling between client and database may complicate maintenance.  
+**Example:** Library Management System in schools, where staff use a desktop app connected to a database server.
+
+---
+
+## Concept: 3-Tier Architecture
+**Definition:** Architecture with an intermediate application server layer between client and database server.  
+**Key Points:**  
+- Client communicates with application server, which processes logic and interacts with database.  
+- Improves scalability, data integrity, and security by separating concerns.  
+- More complex and costly; may have slower response due to additional communication layer.  
+**Example:** E-commerce store where product availability, pricing, and orders are processed through an application server.
+
+---
+
+## Concept: Advantages of 1-Tier Architecture
+**Definition:** Benefits of a single-system architecture for applications.  
+**Key Points:**  
+- Simple and cost-effective setup.  
+- Easy to deploy, ideal for small projects.  
+- Minimal hardware requirements.  
+**Example:** Standalone desktop applications used by individuals.
+
+---
+
+## Concept: Disadvantages of 1-Tier Architecture
+**Definition:** Limitations of having all components on one system.  
+**Key Points:**  
+- Single user only, no multi-user support.  
+- Poor security due to lack of separation.  
+- Difficult data sharing and no centralized control.  
+**Example:** Data loss risk if the single computer fails.
+
+---
+
+## Concept: Advantages of 2-Tier Architecture
+**Definition:** Benefits of basic client-server systems.  
+**Key Points:**  
+- Faster database access and retrieval.  
+- Scalable by adding clients or upgrading server hardware.  
+- Easier to deploy and understand than more complex architectures.  
+**Example:** Small organizational apps connecting to a centralized database.
+
+---
+
+## Concept: Disadvantages of 2-Tier Architecture
+**Definition:** Challenges with two-tier client-server architecture.  
+**Key Points:**  
+- Limited scalability as server overload increases with users.  
+- Security risks with direct client-database connections.  
+- Tight coupling makes updates complex.  
+**Example:** Performance can degrade with many simultaneous users.
+
+---
+
+## Concept: Advantages of 3-Tier Architecture
+**Definition:** Benefits of adding an application server between client and database.  
+**Key Points:**  
+- Enhanced scalability with distributed deployment.  
+- Improved data integrity and security by isolating direct database access.  
+- Facilitates modular development and easier maintenance.  
+**Example:** Large web applications and enterprise systems.
+
+---
+
+## Concept: Disadvantages of 3-Tier Architecture
+**Definition:** Drawbacks of the more complex three-layer system.  
+**Key Points:**  
+- Increased complexity and communication points.  
+- Potentially slower response times due to intermediate processing.  
+- Higher cost for setup and maintenance.  
+**Example:** Requires more hardware, software, and skilled personnel.
+
